@@ -19,7 +19,7 @@ export function Home() {
   }
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3333/games")
+    fetch("http://localhost:3333/games")
       .then((response) => response.json())
       .then((data) => setGames(data));
   }, []);
